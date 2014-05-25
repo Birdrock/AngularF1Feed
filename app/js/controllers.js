@@ -10,7 +10,8 @@
 
 //   }]);
 
-angular.module('F1FeederApp.controllers', []).controller('driversController', function($scope) {
+angular.module('F1FeederApp.controllers', []).
+	controller('driversController', function($scope) {
 	$scope.driversList = [
 		{
 		Driver: {
@@ -24,10 +25,10 @@ angular.module('F1FeederApp.controllers', []).controller('driversController', fu
 			]
 		},
 		{
-			Driver: {
-				givenName: 'Fernando',
-				familyNameP 'Alonso'
-			},
+		Driver: {
+			givenName: 'Fernando',
+			familyName: 'Alonso'
+		},
 		points: 207,
 		nationality: "Spanish",
 		Constructors: [
