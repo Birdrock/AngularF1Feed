@@ -24,6 +24,6 @@ angular.module('F1FeederApp', [
 ]).
 config(['$routeProvider', function($routeProvider) {
   $routeProvider.when('/drivers', {templateUrl: 'partials/drivers.html', controller: 'driversController'});
-  $routeProvider.when('/drivers/:id', {templateUrl: 'partials/driver.html', controller: 'driversController'});
+  $routeProvider.when('/drivers/:id', {templateUrl: 'partials/driver.html', controller: 'driverController'});
   $routeProvider.otherwise({redirectTo: '/drivers'});
 }]);
